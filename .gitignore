@@ -128,4 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Data
 /data/attacks.csv
+/data/attacks_cleaned.csv
