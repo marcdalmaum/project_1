@@ -4,10 +4,10 @@
 
 The main objective of this project is to analyze a database of shark attacks and be able to confirm or deny different hypotheses:
 
-1. Mortality from shark attacks has decreased in the last 50 years.
+**1. Mortality from shark attacks has decreased in the last 50 years.
 2. Surfing is the activity with the most provoked shark attacks.
 3. The summer months in the United States (June to September) and Australia (December to March) are the most dangerous for surfing.
-4. Most of the attacks are against people between 20 and 40 years old.
+4. Most of the attacks are against people between 20 and 40 years old.**
 
 ## CLEANING PROCESS
 
@@ -136,6 +136,40 @@ for i in df['Activity']:
 df['Activity'] = df['Activity'].str.capitalize()
 ```
 
-## ANALYSING PROCESS
+## ANALYSING AND HYPOTHESES
 
-## CONCLUSION
+**1. Mortality from shark attacks has decreased in the last 50 years.**
+
+Although mortality began to decrease a lot since 1960, between 1990 and 2000 it increased again. Therefore, although it is true that mortality is lower than 50 years ago, the minimum number of registered deaths was between 1980 and 1990.
+
+<img src="/images/graph_1.png">
+
+**2. Surfing is the activity with the most provoked shark attacks.**
+
+If we look at the activities with the most attacks, we can see that swimming and surfing have the highest number of recorded attacks.
+
+<img src="/images/graph_2.png">
+
+But if we focus only on provoked attacks, we see that more than 50% of these attacks are on people who were fishing.
+
+<img src="/images/graph_3.png">
+
+**3. The summer months in the United States (June to September) and Australia (December to March) are the most dangerous for surfing.**
+
+In the case of the United States, we see that the 4 months with the most shark attacks on surfers are July, August, September and October. Therefore, although October is not considered summer, the summer months are some of the months with the highest number of attacks on surfers.
+
+<img src="/images/graph_4.png">
+
+In the case of Australia, along with October, the 4 summer months are the ones that have recorded the most shark attacks on surfers.
+
+<img src="/images/graph_5.png">
+
+**4. Most of the attacks are against people between 20 and 40 years old.**
+
+In the following boxplot it can be seen that 50% of the attacks are carried out on people between the ages of 18 and 35 approximately. So while it's not exactly 20 to 40 years old, it's not far off the mark.
+
+<img src="/images/graph_6.png">
+
+In case of taking into account the different species of sharks, although there are differences between species such as the Wobbegong or the Mako shark, they are not very significant.
+
+<img src="/images/graph_7.png">
