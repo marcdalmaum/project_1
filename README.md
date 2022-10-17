@@ -123,20 +123,21 @@ df['Fatal (Y/N)'] = df['Fatal (Y/N)'].apply(lambda x: x if x in ('Y','N') else n
 Finally, in the case of the 'Species' column, very similar logic to the 'Activity' column was used.
 
 ```python
-df['Activity'] = df['Activity'].str.lower() 
+df['Species'] = df['Species'].str.lower()
 
-act = [['surf','surfing'], ['board','surfing'], ['swim','swimming'], ['bath','swimming'], ['div','swimming'], ['snork','swimming'], 
-        ['fish','fishing'], ['wad','wading'], ['stand', 'wading'], ['walk', 'wading']]
+spe = [['white','white shark'], ['tiger','tiger shark'], ['bull','bull shark'], ['wobbegong','wobbegong shark'], ['blacktip','blacktip shark'], 
+        ['blue','blue shark'], ['mako','mako shark'], ['nurse','nurse shark'], ['raggedtooth', 'raggedtooth shark'], ['bronze', 'bronze whaler shark']]
 
-for match, new in act:
-    df['Activity'] = df['Activity'].str.replace('(^.*'+match+'.*$)', new, regex = True)
+for match, new in spe:
+    df['Species'] = df['Species'].str.replace('(^.*'+match+'.*$)', new, regex = True)
 
-act_2 = ['swimming','surfing','fishing','wading']
-for i in df['Activity']:
-    if i not in act_2:
-        df['Activity'].replace(i,'other', inplace= True)
+spe_2 = [i[1] for i in spe]
 
-df['Activity'] = df['Activity'].str.capitalize()
+for i in df['Species']:
+    if i not in spe_2:
+        df['Species'].replace(i, np.nan, inplace= True)
+
+df['Species'] = df['Species'].str.capitalize()
 ```
 
 ## ANALYSING AND HYPOTHESES
