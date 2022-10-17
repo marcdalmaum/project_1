@@ -4,10 +4,10 @@
 
 The main objective of this project is to analyze a database of shark attacks and be able to confirm or deny different hypotheses:
 
-**1. Mortality from shark attacks has decreased in the last 50 years.
-2. Surfing is the activity with the most provoked shark attacks.
-3. The summer months in the United States (June to September) and Australia (December to March) are the most dangerous for surfing.
-4. Most of the attacks are against people between 20 and 40 years old.**
+**1. Mortality from shark attacks has decreased in the last 50 years.**
+**2. Surfing is the activity with the most provoked shark attacks.**
+**3. The summer months in the United States (June to September) and Australia (December to March) are the most dangerous for surfing.**
+**4. Most of the attacks are against people between 20 and 40 years old.**
 
 ## CLEANING PROCESS
 
