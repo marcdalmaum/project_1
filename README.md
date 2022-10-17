@@ -5,15 +5,18 @@
 The main objective of this project is to analyze a database of shark attacks and be able to confirm or deny different hypotheses:
 
 **1. Mortality from shark attacks has decreased in the last 50 years.**
+
 **2. Surfing is the activity with the most provoked shark attacks.**
+
 **3. The summer months in the United States (June to September) and Australia (December to March) are the most dangerous for surfing.**
+
 **4. Most of the attacks are against people between 20 and 40 years old.**
 
 ## CLEANING PROCESS
 
 At first, those columns that were not going to be necessary for the analysis, the rows that did not contain at least two valid values and the duplicates were eliminated:
 
-<img src="/images/df.png" width="700" height="200">
+<img src="/images/df.png">
 
 The remaining columns were then cleaned individually.
 
